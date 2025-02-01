@@ -1,16 +1,11 @@
-// src/pages/sobre.js
-import Head from 'next/head';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+// src/app/sobre/page.js (Next.js 13) ou src/pages/sobre.js (Next.js 12)
 import Image from 'next/image';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 export default function Sobre() {
   return (
     <div className="sobre-page">
-      <Head>
-        <title>Sobre - Meu Portfólio</title>
-        <meta name="description" content="Sobre mim e minha jornada como Analista de QA" />
-      </Head>
       <Header />
       <main className="sobre-main">
         <div className="sobre-content">

@@ -1,0 +1,21 @@
+meu-portfolio/               # Raiz do projeto
+├── node_modules/            # Dependências instaladas
+├── public/                  # Arquivos estáticos (imagens, fonts, etc.)
+│   └── images/              # Pasta para imagens
+├── src/                     # Pasta principal do código-fonte
+│   ├── components/          # Componentes reutilizáveis
+│   ├── pages/               # Páginas do site (Next.js 12)
+│   ├── app/                 # Páginas do site (Next.js 13)
+│   ├── styles/              # Estilos globais e módulos CSS
+│   └── tests/               # Testes automatizados
+├── .github/                 # Configurações do GitHub Actions
+│   └── workflows/
+│       └── ci.yml           # Configuração do CI
+├── .gitignore               # Ignora arquivos no Git
+├── jest.config.js           # Configuração do Jest
+├── jest.setup.js            # Configurações adicionais do Jest
+├── babel.config.js          # Configuração do Babel (opcional)
+├── next.config.js           # Configuração do Next.js
+├── package.json             # Lista de dependências e scripts
+├── package-lock.json        # Versões exatas das dependências
+└── README.md                # Documentação do projeto

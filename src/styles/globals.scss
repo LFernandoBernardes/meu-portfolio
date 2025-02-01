@@ -111,3 +111,42 @@ body {
     margin: 0;
   }
 }
+
+// Estilos para a pagina Sobre
+.sobre-page {
+  padding: 2rem;
+  .sobre-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sobre-content {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      .sobre-image {
+        border-radius: 50%;
+      }
+      .sobre-text {
+        max-width: 600px;
+        .sobre-title {
+          color: $azul-marinho;
+        }
+        .sobre-description {
+          color: $cinza-queimado;
+        }
+      }
+    }
+  }
+}
+
+// Estilos para a pagina Projetos
+.projetos-page {
+  padding: 2rem;
+  .projetos-main {
+    text-align: center;
+    .projetos-title {
+      color: $azul-marinho;
+      margin-bottom: 2rem;
+    }
+  }
+}
