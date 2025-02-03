@@ -1,0 +1,24 @@
+# Seletores para a página de projetos
+.project-page
+.project-title
+.project-image
+.project-description
+.project-details
+.project-details h2
+.project-details p
+
+# Seletores para a página "Sobre"
+.sobre-page
+.sobre-main
+.sobre-content
+.sobre-image
+.sobre-text
+.sobre-title
+.sobre-description
+.skills-section
+.skills-title
+.skills-grid
+.skill-category
+.skill-icons
+
+

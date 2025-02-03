@@ -3,8 +3,8 @@ import ProjectsCarousel from './ProjectsCarousel.client';
 
 export default function ProjectsSection() {
   return (
-    <section className="projects-section">
-      <h2 className="projects-title">Meus Projetos que trabalhei</h2>
+    <section className="projects-section fade-in">
+      <h2 className="projects-title">Meus Projetos</h2>
       <ProjectsCarousel />
     </section>
   );
