@@ -43,7 +43,7 @@ a {
 
 // Estilos para o cabeçalho (Header)
 .header {
-  background-color: $azul-marinho; // Define o fundo do cabeçalho como azul escuro
+  background-color: $cinza-queimado; // Define o fundo do cabeçalho como azul escuro
   padding: 1rem; // Adiciona padding interno
   position: sticky; // Fixa o cabeçalho no topo da página
   top: 0; // Posiciona o cabeçalho no topo
@@ -69,7 +69,7 @@ a {
 
 // Estilos para o rodapé (Footer)
 .footer {
-  background-color: $azul-marinho; // Define o fundo do rodapé como azul escuro
+  background-color: $cinza-queimado; // Define o fundo do rodapé como azul escuro
   color: $branco; // Define a cor do texto como branco
   text-align: center; // Centraliza o texto
   padding: 1rem; // Adiciona padding interno
@@ -250,8 +250,9 @@ a {
 .portfolio-page {
   padding: 0rem; // Remove padding interno
   text-align: center; // Centraliza o texto
-  margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
-  margin-right: 30px; /* Adiciona uma margem de 30px à direita */
+  // margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
+  // margin-right: 30px; /* Adiciona uma margem de 30px à direita */
+
 
   .portfolio-title {
     padding: 3rem;
@@ -345,8 +346,8 @@ a {
 // Estilos para a página Sobre
 .sobre-page {
   padding: 0rem; // Remove padding interno
-  margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
-  margin-right: 30px; /* Adiciona uma margem de 30px à direita */
+  // margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
+  // margin-right: 30px; /* Adiciona uma margem de 30px à direita */
 
   .sobre-main {
     max-width: 1200px; // Define a largura máxima do conteúdo
@@ -371,7 +372,7 @@ a {
 
       .sobre-text {
         max-width: 700px; // Define a largura máxima do texto
-        line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
+        line-height: 2; /* Aumenta o espaçamento entre as linhas */
 
         .sobre-title {
           color: $cinza-claro; // Define a cor do título como cinza-claro
@@ -489,6 +490,6 @@ button {
   margin-bottom: 2rem; // Adiciona margem inferior
 
   .carousel-image {
-    border-radius: 30px;
+    border-radius: 10px;
   }
 }
