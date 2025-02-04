@@ -28,12 +28,15 @@ export default function ProjectsCarousel() {
 
   return (
     <Swiper
-      spaceBetween={50}
+      spaceBetween={30}
       slidesPerView= {2} // Exibe 3 projetos por vez
       navigation
       pagination={{ clickable: true }}
       modules={[Navigation, Pagination]} // Adicione os módulos
       className="projects-carousel"
+      
+      
+      
     >
       {projects.map((project) => (
         <SwiperSlide key={project.id} className="project-slide">

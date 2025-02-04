@@ -154,14 +154,23 @@ a {
 .projects-section {
   padding: 5rem; // Adiciona padding interno
   background-color: $azul-marinho; // Define o fundo da seção como branco
-  margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
-  margin-right: 30px; /* Adiciona uma margem de 30px à direita */
+  margin-left: 100px; /* Adiciona uma margem de 20px à esquerda */
+
 
   .projects-title {
     color: $cinza-claro; // Define a cor do título como azul escuro
     font-family: $fonte-principal; // Define a fonte principal para o título
     text-align: center; // Centraliza o texto
-    margin-bottom: 2rem; // Adiciona margem inferior
+    margin-bottom: 5rem; // Adiciona margem inferior
+  }
+
+  
+  .project-description {
+    color: $cinza-claro; // Define a cor do texto como cinza escuro
+    font-family: $fonte-secundaria; // Define a fonte secundária para o texto
+    text-align: justify; // Centraliza o texto
+    margin-bottom: 5rem; // Adiciona margem inferior
+    margin-right: 10rem; /* Adiciona uma margem de 30px à direita */
   }
 }
 
@@ -203,7 +212,7 @@ a {
     color: $cinza-claro; // Define a cor do título como azul escuro
     font-family: $fonte-principal; // Define a fonte principal para o título
     text-align: center; // Centraliza o texto
-    margin-bottom: rem; // Adiciona margem inferior
+    margin-bottom: 3rem; // Adiciona margem inferior
   }
 
   .skills-grid {
@@ -245,6 +254,7 @@ a {
   margin-right: 30px; /* Adiciona uma margem de 30px à direita */
 
   .portfolio-title {
+    padding: 3rem;
     color: $cinza-claro; // Define a cor do título como azul escuro
     font-family: $fonte-principal; // Define a fonte principal para o título
     margin-bottom: 5rem; // Remove margem inferior
@@ -253,8 +263,9 @@ a {
   .portfolio-grid {
     display: grid; // Usa grid para organizar os itens
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // Define o layout do grid
-    gap: 3rem; // Adiciona espaçamento entre os itens
-    padding: 0 2rem; // Adiciona padding horizontal
+    gap: 9rem; // Adiciona espaçamento entre os itens
+    padding: 1 2rem; // Adiciona padding horizontal
+    margin-bottom: 2rem; // Adiciona margem inferior
     
 
     .project-card {
@@ -267,8 +278,11 @@ a {
       }
 
       .project-image {
-        border-radius: 10px; // Arredonda as bordas da imagem
-        margin-bottom: 1rem; // Adiciona margem inferior
+        border-radius: 20px; // Arredonda as bordas da imagem
+        margin-bottom: 2rem; // Adiciona margem inferior
+        margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
+        margin-right: 30px; /* Adiciona uma margem de 30px à direita */
+      
       }
 
       .project-name {
@@ -280,6 +294,8 @@ a {
       .project-description {
         color: $cinza-claro; // Define a cor do texto como cinza escuro
         font-family: $fonte-secundaria; // Define a fonte secundária para o texto
+        text-align: center; // Centraliza o texto
+        margin-bottom: 2rem; // Adiciona margem inferior
       }
     }
   }
@@ -470,6 +486,7 @@ button {
   margin: 3rem 0;
   margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
   margin-right: 30px; /* Adiciona uma margem de 30px à direita */
+  margin-bottom: 2rem; // Adiciona margem inferior
 
   .carousel-image {
     border-radius: 30px;
