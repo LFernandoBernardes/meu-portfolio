@@ -1,249 +1,235 @@
+// Importa a fonte 'Fira Code' do Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
+
+// Importa a fonte 'Open Sans' do Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
 
-// src/styles/globals.scss
-// Definindo as variáveis de cores
-// src/styles/globals.scss
-// Cores
-$azul-marinho: #2c3e50;
-$cinza-queimado: #34495e;
-$amarelo-queimado: #f1c40f;
-$branco: #ffffff;
-$cinza-claro: #f5f5f5;
+// Define variáveis de cores para serem reutilizadas no código
+$azul-marinho: #2c3e50; // Cor azul escuro
+$cinza-queimado: #34495e; // Cor cinza escuro
+$amarelo-queimado: #f1c40f; // Cor amarelo
+$branco: #ffffff; // Cor branca
+$cinza-claro: #f5f5f5; // Cor cinza claro
 
-// Fontes
-$fonte-principal: 'Fira Code', monospace;
-$fonte-secundaria:  'Fira Code', monospace;
-// Estilos globais
+// Define variáveis de fontes
+$fonte-principal: 'Fira Code', monospace; // Fonte principal (Fira Code)
+$fonte-secundaria: 'Fira Code', monospace; // Fonte secundária (Fira Code)
+
+// Estilos globais para o corpo da página
 body {
-  font-family: $fonte-secundaria;
-  color: $cinza-queimado;
-  background-color: $cinza-claro;
-  margin: 0;
-  padding: 0;
+  font-family: $fonte-secundaria; // Define a fonte secundária como padrão
+  color: $cinza-claro; // Define a cor do texto como cinza escuro
+  background-color: $azul-marinho; // Define o fundo da página como cinza claro
+  margin: 10; // Remove margens padrão
+  padding: 0; // Remove padding padrão
 }
 
+// Estilos para os títulos (h1, h2, h3)
 h1, h2, h3 {
-  font-family: $fonte-principal;
-  color: $azul-marinho;
+  font-family: $fonte-principal; // Define a fonte principal para títulos
+  color: $cinza-claro; // Define a cor dos títulos como azul escuro
 }
 
+// Estilos para links
 a {
-  color: $amarelo-queimado;
-  text-decoration: none;
-  transition: color 0.3s ease;
+  color: $amarelo-queimado; // Define a cor dos links como amarelo
+  text-decoration: none; // Remove sublinhado dos links
+  transition: color 0.3s ease; // Adiciona transição suave na cor do link
 
   &:hover {
-    color: darken($amarelo-queimado, 10%);
+    color: darken($amarelo-queimado, 10%); // Escurece a cor do link ao passar o mouse
   }
 }
 
-// Estilos para o Header
+// Estilos para o cabeçalho (Header)
 .header {
-  background-color: $azul-marinho;
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  background-color: $azul-marinho; // Define o fundo do cabeçalho como azul escuro
+  padding: 1rem; // Adiciona padding interno
+  position: sticky; // Fixa o cabeçalho no topo da página
+  top: 0; // Posiciona o cabeçalho no topo
+  z-index: 1000; // Garante que o cabeçalho fique acima de outros elementos
 
   .nav {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+    display: flex; // Usa flexbox para alinhar os itens
+    justify-content: center; // Centraliza os itens horizontalmente
+    gap: 2rem; // Adiciona espaçamento entre os itens
 
     .nav-link {
-      color: $branco;
-      text-decoration: none;
-      font-family: $fonte-principal;
-      transition: color 0.3s ease;
+      color: $branco; // Define a cor dos links do menu como branco
+      text-decoration: none; // Remove sublinhado dos links
+      font-family: $fonte-principal; // Define a fonte principal para os links
+      transition: color 0.3s ease; // Adiciona transição suave na cor do link
 
       &:hover {
-        color: $amarelo-queimado;
+        color: $amarelo-queimado; // Muda a cor do link para amarelo ao passar o mouse
       }
     }
   }
 }
 
-// Estilos para o Footer
+// Estilos para o rodapé (Footer)
 .footer {
-  background-color: $azul-marinho;
-  color: $branco;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  background-color: $azul-marinho; // Define o fundo do rodapé como azul escuro
+  color: $branco; // Define a cor do texto como branco
+  text-align: center; // Centraliza o texto
+  padding: 1rem; // Adiciona padding interno
+  margin-top: 3rem; // Adiciona margem superior
 
   .footer-text {
-    margin: 0;
+    margin: 0; // Remove margens padrão
   }
 
   .footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    display: flex; // Usa flexbox para alinhar os itens
+    justify-content: center; // Centraliza os itens horizontalmente
+    gap: 1rem; // Adiciona espaçamento entre os itens
+    margin-top: 1rem; // Adiciona margem superior
 
     .footer-link {
-      color: $branco;
-      text-decoration: none;
-      transition: color 0.3s ease;
+      color: $branco; // Define a cor dos links como branco
+      text-decoration: none; // Remove sublinhado dos links
+      transition: color 0.3s ease; // Adiciona transição suave na cor do link
 
       &:hover {
-        color: $amarelo-queimado;
+        color: $amarelo-queimado; // Muda a cor do link para amarelo ao passar o mouse
       }
     }
   }
 }
 
-// Estilos para a seção Home
+// Estilos para a seção Home (Página inicial)
 .home-section {
-  padding: 2rem;
-  background-color: $cinza-claro;
+  padding: 2rem; // Adiciona padding interno
+  background-color: $azul-marinho; // Define o fundo da seção como cinza claro
 
   .home-content {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex; // Usa flexbox para alinhar os itens
+    align-items: center; // Centraliza os itens verticalmente
+    gap: 2rem; // Adiciona espaçamento entre os itens
+    max-width: 1200px; // Define a largura máxima do conteúdo
+    margin: 5 auto; // Centraliza o conteúdo na página
 
-    .profile-image {
-      border-radius: 50%;
-      transition: transform 0.3s ease;
+    // .profile-image {
+    //   border-radius: 50%; // Arredonda a imagem
+    //   transition: transform 0.3s ease; // Adiciona transição suave no efeito de zoom
 
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
+    //   &:hover {
+    //     transform: scale(1.1); // Aumenta a imagem em 10% ao passar o mouse
+    //   }
+    // }
 
     .home-text {
-      max-width: 600px;
+      max-width: 1000px; // Define a largura máxima do texto
+      line-height: 3; /* Aumenta o espaçamento entre as linhas */
+      text-align: justify; // Alinhamento do Texto
+      margin-left: 100px; /* Adiciona uma margem de 20px à esquerda */
 
       .home-title {
-        color: $azul-marinho;
-        font-family: $fonte-principal;
+        color: $cinza-claro; // Define a cor do título como azul escuro
+        font-family: $fonte-principal; // Define a fonte principal para o título
       }
 
       .home-description {
-        color: $cinza-queimado;
-        font-family: $fonte-secundaria;
+        color: $cinza-claro; // Define a cor do texto como cinza escuro
+        font-family: $fonte-secundaria; // Define a fonte secundária para o texto
       }
 
       .about-button {
-        background-color: $amarelo-queimado;
-        color: $branco;
-        padding: 0.5rem 1rem;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
+        background-color: $amarelo-queimado; // Define o fundo do botão como amarelo
+        color: $azul-marinho; // Define a cor do texto do botão como branco
+        padding: 0.5rem 1rem; // Adiciona padding interno
+        text-decoration: none; // Remove sublinhado do botão
+        border-radius: 5px; // Arredonda as bordas do botão
+        transition: background-color 0.3s ease; // Adiciona transição suave no fundo do botão
 
         &:hover {
-          background-color: darken($amarelo-queimado, 10%);
+          background-color: darken($amarelo-queimado, 10%); // Escurece o fundo do botão ao passar o mouse
         }
       }
     }
   }
 }
 
-// Estilos para a seção Projetos
-// .projects-section {
-//   padding: 2rem;
-//   .projects-title {
-//     color: $azul-marinho;
-//   }
-//   .projects-carousel {
-//     .project-slide {
-//       text-align: center;
-//       .project-image {
-//         border-radius: 10px;
-//       }
-//       .project-name {
-//         color: $azul-marinho;
-//       }
-//       .project-description {
-//         color: $cinza-queimado;
-//       }
-//     }
-//   }
-// }
-
-// Estilo para seção Projetos
+// Estilos para a seção de Projetos (Página de portfólio)
 .projects-section {
-  padding: 2rem;
-  background-color: $branco;
+  padding: 5rem; // Adiciona padding interno
+  background-color: $azul-marinho; // Define o fundo da seção como branco
+  margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
+  margin-right: 30px; /* Adiciona uma margem de 30px à direita */
 
   .projects-title {
-    color: $azul-marinho;
-    font-family: $fonte-principal;
-    text-align: center;
-    margin-bottom: 2rem;
+    color: $cinza-claro; // Define a cor do título como azul escuro
+    font-family: $fonte-principal; // Define a fonte principal para o título
+    text-align: center; // Centraliza o texto
+    margin-bottom: 2rem; // Adiciona margem inferior
   }
 }
 
-// Estilos para a seção Contato
+// Estilos para a seção de Contato
 .contact-section {
-  padding: 2rem;
-  background-color: $cinza-claro;
+  padding: 2rem; // Adiciona padding interno
+  background-color: $cinza-claro; // Define o fundo da seção como cinza claro
 
   .contact-title {
-    color: $azul-marinho;
-    font-family: $fonte-principal;
-    text-align: center;
-    margin-bottom: 2rem;
+    color: $azul-marinho; // Define a cor do título como azul escuro
+    font-family: $fonte-principal; // Define a fonte principal para o título
+    text-align: center; // Centraliza o texto
+    margin-bottom: 2rem; // Adiciona margem inferior
   }
 
   .contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+    display: flex; // Usa flexbox para alinhar os itens
+    justify-content: center; // Centraliza os itens horizontalmente
+    gap: 2rem; // Adiciona espaçamento entre os itens
 
     .contact-link {
-      color: $cinza-queimado;
-      text-decoration: none;
-      transition: color 0.3s ease;
+      color: $cinza-queimado; // Define a cor dos links como cinza escuro
+      text-decoration: none; // Remove sublinhado dos links
+      transition: color 0.3s ease; // Adiciona transição suave na cor do link
 
       &:hover {
-        color: $amarelo-queimado;
+        color: $amarelo-queimado; // Muda a cor do link para amarelo ao passar o mouse
       }
     }
   }
 }
 
-// Estilos para a seção Skills
+// Estilos para a seção de Habilidades (Skills)
 .skills-section {
-  padding: 2rem;
-  background-color: $branco;
+  padding: 5rem; // Adiciona padding interno
+  background-color: $cinza-claro; // Define o fundo da seção como branco
 
   .skills-title {
-    color: $azul-marinho;
-    font-family: $fonte-principal;
-    text-align: center;
-    margin-bottom: 2rem;
+    color: $cinza-claro; // Define a cor do título como azul escuro
+    font-family: $fonte-principal; // Define a fonte principal para o título
+    text-align: center; // Centraliza o texto
+    margin-bottom: rem; // Adiciona margem inferior
   }
 
   .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    display: grid; // Usa grid para organizar os itens
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); // Define o layout do grid
+    gap: 3rem; // Adiciona espaçamento entre os itens
 
     .skill-category {
-      text-align: center;
+      text-align: center; // Centraliza o texto
 
       h3 {
-        color: $cinza-queimado;
-        font-family: $fonte-principal;
-        margin-bottom: 1rem;
+        color: $cinza-claro; // Define a cor do título como cinza escuro
+        font-family: $fonte-principal; // Define a fonte principal para o título
+        margin-bottom: 2rem; // Adiciona margem inferior
       }
 
       .skill-icons {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
+        display: flex; // Usa flexbox para alinhar os itens
+        justify-content: center; // Centraliza os itens horizontalmente
+        gap: 1rem; // Adiciona espaçamento entre os itens
 
         img {
-          transition: transform 0.3s ease;
+          transition: transform 0.3s ease; // Adiciona transição suave no efeito de zoom
 
           &:hover {
-            transform: scale(1.2);
+            transform: scale(1.2); // Aumenta o ícone em 20% ao passar o mouse
           }
         }
       }
@@ -251,87 +237,174 @@ a {
   }
 }
 
-// Estilos para a pagina Projetos
-.projetos-page {
-  padding: 2rem;
-  .projetos-main {
-    text-align: center;
-    .projetos-title {
-      color: $azul-marinho;
-      margin-bottom: 2rem;
+// Estilos para a página de portfólio
+.portfolio-page {
+  padding: 0rem; // Remove padding interno
+  text-align: center; // Centraliza o texto
+  margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
+  margin-right: 30px; /* Adiciona uma margem de 30px à direita */
+
+  .portfolio-title {
+    color: $cinza-claro; // Define a cor do título como azul escuro
+    font-family: $fonte-principal; // Define a fonte principal para o título
+    margin-bottom: 5rem; // Remove margem inferior
+  }
+
+  .portfolio-grid {
+    display: grid; // Usa grid para organizar os itens
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // Define o layout do grid
+    gap: 3rem; // Adiciona espaçamento entre os itens
+    padding: 0 2rem; // Adiciona padding horizontal
+    
+
+    .project-card {
+      text-decoration: none; // Remove sublinhado dos links
+      color: inherit; // Herda a cor do texto
+      transition: transform 0.3s ease; // Adiciona transição suave no efeito de zoom
+
+      &:hover {
+        transform: scale(1.05); // Aumenta o card em 5% ao passar o mouse
+      }
+
+      .project-image {
+        border-radius: 10px; // Arredonda as bordas da imagem
+        margin-bottom: 1rem; // Adiciona margem inferior
+      }
+
+      .project-name {
+        color: $cinza-claro; // Define a cor do título como azul escuro
+        font-family: $fonte-principal; // Define a fonte principal para o título
+        margin-bottom: 0.5rem; // Adiciona margem inferior
+      }
+
+      .project-description {
+        color: $cinza-claro; // Define a cor do texto como cinza escuro
+        font-family: $fonte-secundaria; // Define a fonte secundária para o texto
+      }
     }
   }
 }
 
-//  Estilos para a pagina sobre
+// Estilos para a página de projeto específico
+.project-page {
+  padding: 0rem; // Remove padding interno
+  text-align: center; // Centraliza o texto
+
+  .project-title {
+    color: $cinza-claro; // Define a cor do título como azul escuro
+    font-family: $fonte-principal; // Define a fonte principal para o título
+    margin-bottom: 3rem; // Adiciona margem inferior
+    padding: 3rem; // Remove padding interno
+  }
+
+  .project-image {
+    border-radius: 10px; // Arredonda as bordas da imagem
+    margin-bottom: 1rem; // Adiciona margem inferior
+  }
+
+  .project-description {
+    color: $cinza-claro; // Define a cor do texto como cinza-claro
+    font-family: $fonte-secundaria; // Define a fonte secundária para o texto
+    margin-bottom: 2rem; // Adiciona margem inferior
+  }
+
+  .project-details {
+    text-align: left; // Alinha o texto à esquerda
+    max-width: 800px; // Define a largura máxima do conteúdo
+    margin: 0 auto; // Centraliza o conteúdo na página
+
+    h2 {
+      color: $cinza-claro; // Define a cor do título como cinza-claro
+      font-family: $fonte-principal; // Define a fonte principal para o título
+      margin-bottom: 1rem; // Adiciona margem inferior
+    }
+
+    p {
+      color: $cinza-claro; // Define a cor do texto como cinza-claro
+      font-family: $fonte-secundaria; // Define a fonte secundária para o texto
+    }
+  }
+}
+
+// Estilos para a página Sobre
 .sobre-page {
-  padding: 0rem;
+  padding: 0rem; // Remove padding interno
+  margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
+  margin-right: 30px; /* Adiciona uma margem de 30px à direita */
 
   .sobre-main {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px; // Define a largura máxima do conteúdo
+    margin: 0 auto; // Centraliza o conteúdo na página
+    margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
+    margin-right: 30px; /* Adiciona uma margem de 30px à direita */
 
     .sobre-content {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
+      display: flex; // Usa flexbox para alinhar os itens
+      align-items: center; // Centraliza os itens verticalmente
+      gap: 3rem; // Adiciona espaçamento entre os itens
+      padding: 3rem;;
 
       .sobre-image {
-        border-radius: 50%;
-        transition: transform 0.3s ease;
+        border-radius: 50%; // Arredonda a imagem
+        transition: transform 0.3s ease; // Adiciona transição suave no efeito de zoom
 
         &:hover {
-          transform: scale(1.1); // Efeito de zoom ao passar o mouse
+          transform: scale(1.1); // Aumenta a imagem em 10% ao passar o mouse
         }
       }
 
       .sobre-text {
-        max-width: 600px;
+        max-width: 700px; // Define a largura máxima do texto
+        line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
 
         .sobre-title {
-          color: $azul-marinho;
-          font-family: 'Fira Code', monospace;
+          color: $cinza-claro; // Define a cor do título como cinza-claro
+          font-family: 'Fira Code', monospace; // Define a fonte principal para o título
         }
 
         .sobre-description {
-          color: $cinza-queimado;
-          font-family: 'Fira Code', monospace;
+          color: $cinza-claro; // Define a cor do texto como cinza-claro
+          font-family: 'Fira Code', monospace; // Define a fonte secundária para o texto
         }
       }
     }
 
+    // Estilo Seção Habilidades na pagina Sobre
     .skills-section {
-      margin-top: 3rem;
+      margin-top: 1rem; // Adiciona margem superior
+      background-color: $azul-marinho;
+      margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
+      margin-right: 30px; /* Adiciona uma margem de 30px à direita */
 
       .skills-title {
-        color: $azul-marinho;
-        font-family: 'Fira Code', monospace;
-        text-align: center;
+        color: $cinza-claro; // Define a cor do título como cinza-claro
+        font-family: 'Fira Code', monospace; // Define a fonte principal para o título
+        text-align: center; // Centraliza o texto
       }
 
       .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 2rem;
+        display: grid; // Usa grid para organizar os itens
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); // Define o layout do grid
+        gap: 2rem; // Adiciona espaçamento entre os itens
 
         .skill-category {
-          text-align: center;
+          text-align: center; // Centraliza o texto
 
           h3 {
-            color: $cinza-queimado;
-            font-family: 'Fira Code', monospace;
+            color: $cinza-claro; // Define a cor do título como cinza-claro
+            font-family: 'Fira Code', monospace; // Define a fonte principal para o título
           }
 
           .skill-icons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
+            display: flex; // Usa flexbox para alinhar os itens
+            justify-content: center; // Centraliza os itens horizontalmente
+            gap: 1rem; // Adiciona espaçamento entre os itens
 
             img {
-              transition: transform 0.3s ease;
+              transition: transform 0.3s ease; // Adiciona transição suave no efeito de zoom
 
               &:hover {
-                transform: scale(1.2); // Efeito de zoom ao passar o mouse
+                transform: scale(1.2); // Aumenta o ícone em 20% ao passar o mouse
               }
             }
           }
@@ -341,14 +414,16 @@ a {
   }
 }
 
-// Efeito de Zoom nas Imagens
+// Efeito de zoom nas imagens
 img {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease; // Adiciona transição suave no efeito de zoom
 
   &:hover {
-    transform: scale(1.1); // Aumenta a imagem em 10%
+    transform: scale(1.1); // Aumenta a imagem em 10% ao passar o mouse
   }
 }
+
+// Estilos para botões
 
 // Efeito de Fundo nos Botões
 button {
@@ -387,5 +462,16 @@ button {
 
   &:hover {
     color: $amarelo-queimado;
+  }
+}
+
+// Carroussel de cada projeto
+.project-carousel {
+  margin: 3rem 0;
+  margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
+  margin-right: 30px; /* Adiciona uma margem de 30px à direita */
+
+  .carousel-image {
+    border-radius: 30px;
   }
 }

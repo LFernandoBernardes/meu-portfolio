@@ -6,15 +6,15 @@ export default function HomeSection() {
   return (
     <section className="home-section fade-in">
       <div className="home-content">
-        <Image
+        {/* <Image
           src="/images/perfil.jpeg"
           alt="Foto de Perfil"
           width={200}
           height={200}
           className="profile-image"
-        />
+        /> */}
         <div className="home-text">
-          <h1 className="home-title">Olá, eu sou [Seu Nome]</h1>
+          <h1 className="home-title">Olá, eu sou Luiz Fernando</h1>
           <p className="home-description">
             Sou um Analista de QA Junior com experiência em testes manuais e automação. Trabalho com ferramentas como Cypress, Selenium, e Postman. Além disso, tenho conhecimentos em JavaScript e Python. Nos meus projetos, busco sempre garantir a qualidade e a usabilidade dos produtos.
           </p>

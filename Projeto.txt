@@ -1,0 +1,42 @@
+src/
+├── app/
+│   ├── sobre/
+│   │   └── page.js              // Página "Sobre"
+│   ├── projetos/
+│   │   ├── [id]/
+│   │   │   └── page.js          // Página dinâmica de projetos
+│   │   └── page.js              // Página de listagem de projetos (galeria)
+│   ├── global.css
+│   ├── layout.js                // Layout global do site
+│   ├── page.js                  // Página inicial (Home)
+│   ├── index.js
+│   ├── projetos.js
+│   ├── sobre.js
+├── components/
+│   ├── Header.js                // Componente do cabeçalho
+│   ├── Footer.js                // Componente do rodapé
+│   ├── HomeSection.js           // Seção da página inicial
+│   ├── ProjectsSection.js       // Seção de projetos da página inicial
+│   ├── ContactSection.js        // Seção de contato da página inicial
+│   ├── ProjectsCarousel.client.js // Carrossel de projetos (Client Component)
+│   └── SkillsSection.js         // Seção de habilidades da página "Sobre"
+├── styles/
+│   └── globals.scss             // Estilos globais do site
+├── public/
+│   ├── images/
+│   │   ├── foto-sobre.jpg       // Foto da página "Sobre"
+│   │   ├── bootcamp.jpg         // Imagem do projeto Bootcamp
+│   │   ├── swaglab.jpg          // Imagem do projeto Swaglab
+│   │   ├── javascript.png       // Logo do JavaScript
+│   │   ├── typescript.png       // Logo do TypeScript
+│   │   ├── cypress.png          // Logo do Cypress
+│   │   ├── playwright.png       // Logo do Playwright
+│   │   ├── jest.png             // Logo do Jest
+│   │   ├── postman.png          // Logo do Postman
+│   │   ├── github.png           // Logo do GitHub
+│   │   ├── jira.png             // Logo do Jira
+│   │   ├── docker.png           // Logo do Docker
+│   │   └── vscode.png           // Logo do VSCode
+└── tests/
+    ├── example.test.js          // Teste de exemplo
+    └── Header.test.js           // Teste do componente Header

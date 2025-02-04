@@ -1,1 +1,0 @@
- // Página de listagem de projetos (galeria)
