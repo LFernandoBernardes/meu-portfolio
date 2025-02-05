@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Header from '../../components/Header'; // Importe o Header
 import Footer from '../../components/Footer'; // Importe o Footer
 
+
 const projects = [
   {
     id: 1,

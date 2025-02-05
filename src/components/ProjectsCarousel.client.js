@@ -7,6 +7,9 @@ import 'swiper/swiper-bundle.css';
 import Image from 'next/image';
 
 
+
+
+
 export default function ProjectsCarousel() {
   const projects = [
     { id: 1, 
@@ -26,16 +29,19 @@ export default function ProjectsCarousel() {
     // { id: 6, name: 'L5Network', description: 'Testes de navegação e interação no site e2e', image: '/images/l5network.png' },
   ];
 
+  // <!-- Swiper JS -->
+
   return (
     <Swiper
-    spaceBetween={1}
-    slidesPerView={2}
-    loop={true} // Ativa o loop (repetição contínua)
-    // navigation
-    pagination={{ clickable: true }}
-    modules={[Navigation, Pagination]} // Adicione os módulos
-      className="projects-carousel"
-            
+        slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={false}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"  
       
     >
       {projects.map((project) => (
@@ -43,12 +49,12 @@ export default function ProjectsCarousel() {
           <Image
             src={project.image}
             alt={project.name}
-            width={500}
-            height={350}
+            width={300}
+            height={300}
             className="project-image"
           />
-          <h3 className="project-name">{project.name}</h3>
-          <p className="project-description">{project.description}</p>
+          {/* <h3 className="project-name">{project.name}</h3> 
+           <p className="project-description">{project.description}</p> */}
         </SwiperSlide>
       ))}
     </Swiper>

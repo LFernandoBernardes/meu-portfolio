@@ -12,7 +12,7 @@ import Image from 'next/image';
 export default function ProjectCarousel({ images }) {
   return (
     <Swiper
-      spaceBetween={10}
+      spaceBetween={50}
       slidesPerView={1}
       loop={true} // Ativa o loop (repetição contínua)
       navigation

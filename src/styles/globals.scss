@@ -220,7 +220,7 @@ Copy
 
 // Estilos para a seção de Projetos (Página de portfólio)
 .projects-section {
-  padding: 3rem; // Adiciona padding interno
+  padding: 1rem; // Adiciona padding interno
   background-color: $azul-marinho; // Define o fundo da seção como branco
   margin-left: 5px; /* Adiciona uma margem de 20px à esquerda */
 
@@ -229,7 +229,7 @@ Copy
     color: $cinza-claro; // Define a cor do título como azul escuro
     font-family: $fonte-principal; // Define a fonte principal para o título
     text-align: center; // Centraliza o texto
-    margin-bottom: 5rem; // Adiciona margem inferior
+    margin-bottom: 1rem; // Adiciona margem inferior
   }
 
   
@@ -242,44 +242,6 @@ Copy
   }
 }
 
-// Estilos para o carrossel seção Home
-.projects-carousel {
-  margin: 3rem 3rem;
-  margin-bottom: 2rem; // Adiciona margem inferior
-  margin-right: 2%; /* Adiciona uma margem de 30px à direita */
-  margin-left: 2%; /* Adiciona uma margem de 30px à direita */
-
-  .project-slide {
-    text-align: center; // Centraliza o conteúdo do slide
-    padding: 1rem; // Adiciona padding interno
-
-    .project-image {
-      border-radius: 10px; // Arredonda as bordas da imagem
-      margin-bottom: 1rem; // Adiciona margem inferior
-      // margin-left: 5px; /* Adiciona uma margem de 30px à esquerda */
-      text-align: center; // Centraliza o conteúdo do slide
-      margin-right: 2%; /* Adiciona uma margem de 30px à direita */
-      margin-left: 2%; /* Adiciona uma margem de 30px à direita */
-    }
-
-    .project-name {
-      color: $branco; // Cor do título
-      font-family: 'Fira Code', monospace; // Fonte do título
-      margin-bottom: 0.5rem; // Adiciona margem inferior
-    }
-
-    .project-description {
-      color: $cinza-claro; // Cor da descrição
-      font-family: 'Fira Code', monospace; // Fonte da descrição
-      text-align: center; // Centraliza o conteúdo do slide
-    }
-  }
-}
-@media (max-width: 768px) {
-  .project-carousel {
-    margin: 0rem 0; // Reduz a margem para telas menores
-  }
-}
 
 
 
@@ -369,7 +331,7 @@ Copy
   .portfolio-grid {
     display: grid; // Usa grid para organizar os itens
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // Define o layout do grid
-    gap: 2rem; // Adiciona espaçamento entre os itens
+    gap: 5rem; // Adiciona espaçamento entre os itens
     padding: 0 2rem; // Adiciona padding horizontal
  
 
@@ -665,4 +627,55 @@ button {
   }
 }
 
+
+// Carousel Home
+.swiper {
+  width: 70%;
+  height: 70%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: $azul-marinho;
+  text-align: justify; // Centraliza o conteúdo do slide
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; // Centraliza o conteúdo do slide
+}
+
+.swiper-slide img {
+  // display: block;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  text-align: center; // Centraliza o conteúdo do slide
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// .project-name {
+//   color: $branco; // Cor do título
+//   font-family: 'Fira Code', monospace; // Fonte do título
+//   margin-bottom: 0.5rem; // Adiciona margem inferior
+//   text-align:center; // Centraliza o conteúdo do slide
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+
+// .project-description {
+//   color: $cinza-claro; // Cor da descrição
+//   font-family: 'Fira Code', monospace; // Fonte da descrição
+//   text-align:center; // Centraliza o conteúdo do slide
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
 
