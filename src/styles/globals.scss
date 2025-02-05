@@ -20,8 +20,29 @@ body {
   font-family: $fonte-secundaria; // Define a fonte secundária como padrão
   color: $cinza-claro; // Define a cor do texto como cinza escuro
   background-color: $azul-marinho; // Define o fundo da página como cinza claro
-  margin: 10; // Remove margens padrão
-  padding: 0; // Remove padding padrão
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // Garante que o corpo ocupe toda a altura da tela
+
+}
+
+// Estilos para o conteúdo principal
+main {
+  flex: 1; // Faz o conteúdo principal ocupar o espaço restante
+  padding: 1rem; // Adiciona padding para telas menores
+}
+
+// Ajustes para telas menores (mobile)
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; // Reduz o tamanho da fonte para melhor legibilidade
+  }
+
+  main {
+    padding: 0.5rem; // Reduz o padding para telas menores
+  }
 }
 
 // Estilos para os títulos (h1, h2, h3)
@@ -49,6 +70,7 @@ a {
   top: 0; // Posiciona o cabeçalho no topo
   z-index: 1000; // Garante que o cabeçalho fique acima de outros elementos
 
+
   .nav {
     display: flex; // Usa flexbox para alinhar os itens
     justify-content: center; // Centraliza os itens horizontalmente
@@ -64,6 +86,19 @@ a {
         color: $amarelo-queimado; // Muda a cor do link para amarelo ao passar o mouse
       }
     }
+  }
+}
+
+// Headers Ajustes para telas menores (mobile)
+@media (max-width: 768px) {
+  .header {
+    padding: 0.5rem; // Reduz o padding para telas menores
+  }
+
+  .nav {
+    flex-direction: row; // Altera a direção do flex para coluna
+    gap: 1rem; // Reduz o espaçamento entre os itens
+    align-items: center; // Centraliza os itens verticalmente
   }
 }
 
@@ -97,6 +132,39 @@ a {
   }
 }
 
+// Footer Ajustes para telas menores (mobile)
+@media (max-width: 768px) {
+  .footer {
+    padding: 0.5rem; // Reduz o padding para telas menores
+  }
+
+  .footer-links {
+    flex-direction: column; // Altera a direção do flex para coluna
+    gap: 0.5rem; // Reduz o espaçamento entre os itens
+  }
+}
+
+scss
+Copy
+// src/styles/globals.scss
+.home-section, .sobre-page, .portfolio-page, .project-page {
+  text-align: center; // Centraliza o texto
+  padding: 1rem;
+
+  .home-content, .sobre-content, .portfolio-grid, .project-details {
+    max-width: 1200px;
+    margin: 0 auto; // Centraliza o conteúdo
+    padding: 0 1rem; // Adiciona padding lateral
+  }
+}
+
+// Ajustes para telas menores (mobile)
+@media (max-width: 768px) {
+  .home-section, .sobre-page, .portfolio-page, .project-page {
+    padding: 0.5rem; // Reduz o padding para telas menores
+  }
+}
+
 // Estilos para a seção Home (Página inicial)
 .home-section {
   padding: 2rem; // Adiciona padding interno
@@ -106,8 +174,8 @@ a {
     display: flex; // Usa flexbox para alinhar os itens
     align-items: center; // Centraliza os itens verticalmente
     gap: 2rem; // Adiciona espaçamento entre os itens
-    max-width: 1200px; // Define a largura máxima do conteúdo
-    margin: 5 auto; // Centraliza o conteúdo na página
+    max-width: 1000px; // Define a largura máxima do conteúdo
+    margin: 0 auto; // Centraliza o conteúdo na página
 
     // .profile-image {
     //   border-radius: 50%; // Arredonda a imagem
@@ -122,7 +190,7 @@ a {
       max-width: 1000px; // Define a largura máxima do texto
       line-height: 3; /* Aumenta o espaçamento entre as linhas */
       text-align: justify; // Alinhamento do Texto
-      margin-left: 100px; /* Adiciona uma margem de 20px à esquerda */
+      margin-left: 10px; /* Adiciona uma margem de 20px à esquerda */
 
       .home-title {
         color: $cinza-claro; // Define a cor do título como azul escuro
@@ -152,9 +220,9 @@ a {
 
 // Estilos para a seção de Projetos (Página de portfólio)
 .projects-section {
-  padding: 5rem; // Adiciona padding interno
+  padding: 3rem; // Adiciona padding interno
   background-color: $azul-marinho; // Define o fundo da seção como branco
-  margin-left: 100px; /* Adiciona uma margem de 20px à esquerda */
+  margin-left: 5px; /* Adiciona uma margem de 20px à esquerda */
 
 
   .projects-title {
@@ -170,9 +238,50 @@ a {
     font-family: $fonte-secundaria; // Define a fonte secundária para o texto
     text-align: justify; // Centraliza o texto
     margin-bottom: 5rem; // Adiciona margem inferior
-    margin-right: 10rem; /* Adiciona uma margem de 30px à direita */
+    // margin-right: 2%; /* Adiciona uma margem de 30px à direita */
   }
 }
+
+// Estilos para o carrossel seção Home
+.projects-carousel {
+  margin: 3rem 3rem;
+  margin-bottom: 2rem; // Adiciona margem inferior
+  margin-right: 2%; /* Adiciona uma margem de 30px à direita */
+  margin-left: 2%; /* Adiciona uma margem de 30px à direita */
+
+  .project-slide {
+    text-align: center; // Centraliza o conteúdo do slide
+    padding: 1rem; // Adiciona padding interno
+
+    .project-image {
+      border-radius: 10px; // Arredonda as bordas da imagem
+      margin-bottom: 1rem; // Adiciona margem inferior
+      // margin-left: 5px; /* Adiciona uma margem de 30px à esquerda */
+      text-align: center; // Centraliza o conteúdo do slide
+      margin-right: 2%; /* Adiciona uma margem de 30px à direita */
+      margin-left: 2%; /* Adiciona uma margem de 30px à direita */
+    }
+
+    .project-name {
+      color: $branco; // Cor do título
+      font-family: 'Fira Code', monospace; // Fonte do título
+      margin-bottom: 0.5rem; // Adiciona margem inferior
+    }
+
+    .project-description {
+      color: $cinza-claro; // Cor da descrição
+      font-family: 'Fira Code', monospace; // Fonte da descrição
+      text-align: center; // Centraliza o conteúdo do slide
+    }
+  }
+}
+@media (max-width: 768px) {
+  .project-carousel {
+    margin: 0rem 0; // Reduz a margem para telas menores
+  }
+}
+
+
 
 // Estilos para a seção de Contato
 .contact-section {
@@ -250,24 +359,19 @@ a {
 .portfolio-page {
   padding: 0rem; // Remove padding interno
   text-align: center; // Centraliza o texto
-  // margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
-  // margin-right: 30px; /* Adiciona uma margem de 30px à direita */
-
 
   .portfolio-title {
-    padding: 3rem;
     color: $cinza-claro; // Define a cor do título como azul escuro
     font-family: $fonte-principal; // Define a fonte principal para o título
-    margin-bottom: 5rem; // Remove margem inferior
+    margin-bottom: 3rem; // Remove margem inferior
   }
 
   .portfolio-grid {
     display: grid; // Usa grid para organizar os itens
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // Define o layout do grid
-    gap: 9rem; // Adiciona espaçamento entre os itens
-    padding: 1 2rem; // Adiciona padding horizontal
-    margin-bottom: 2rem; // Adiciona margem inferior
-    
+    gap: 2rem; // Adiciona espaçamento entre os itens
+    padding: 0 2rem; // Adiciona padding horizontal
+ 
 
     .project-card {
       text-decoration: none; // Remove sublinhado dos links
@@ -279,10 +383,8 @@ a {
       }
 
       .project-image {
-        border-radius: 20px; // Arredonda as bordas da imagem
-        margin-bottom: 2rem; // Adiciona margem inferior
-        margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
-        margin-right: 30px; /* Adiciona uma margem de 30px à direita */
+        border-radius: 10px; // Arredonda as bordas da imagem
+        margin-bottom: 1rem; // Adiciona margem inferior
       
       }
 
@@ -302,6 +404,14 @@ a {
   }
 }
 
+// Pagina Projetos Ajustes para telas menores (mobile)
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr; // Exibe os projetos em uma única coluna
+    padding: 0 1rem; // Reduz o padding para telas menores
+  }
+}
+
 // Estilos para a página de projeto específico
 .project-page {
   padding: 0rem; // Remove padding interno
@@ -317,6 +427,8 @@ a {
   .project-image {
     border-radius: 10px; // Arredonda as bordas da imagem
     margin-bottom: 1rem; // Adiciona margem inferior
+    max-width: 100%; // Garante que a imagem não ultrapasse a largura da tela
+    height: auto; // Mantém a proporção da imagem
   }
 
   .project-description {
@@ -341,25 +453,47 @@ a {
       font-family: $fonte-secundaria; // Define a fonte secundária para o texto
     }
   }
+
+  .project-carousel {
+    margin: 2rem 0;
+
+    .carousel-image {
+      border-radius: 10px;
+      max-width: 100%; // Garante que as imagens do carrossel não ultrapassem a largura da tela
+      height: auto; // Mantém a proporção das imagens
+    }
+  }
 }
+
+// Página de projeto específico Ajustes para telas menores (mobile)
+@media (max-width: 768px) {
+  .project-page {
+    padding: 0.5rem; // Reduz o padding para telas menores
+  }
+
+  .project-carousel {
+    margin: 1rem 0; // Reduz a margem para telas menores
+  }
+}
+
 
 // Estilos para a página Sobre
 .sobre-page {
   padding: 0rem; // Remove padding interno
-  // margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
-  // margin-right: 30px; /* Adiciona uma margem de 30px à direita */
 
   .sobre-main {
     max-width: 1200px; // Define a largura máxima do conteúdo
     margin: 0 auto; // Centraliza o conteúdo na página
-    margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
-    margin-right: 30px; /* Adiciona uma margem de 30px à direita */
 
     .sobre-content {
-      display: flex; // Usa flexbox para alinhar os itens
-      align-items: center; // Centraliza os itens verticalmente
-      gap: 3rem; // Adiciona espaçamento entre os itens
-      padding: 3rem;;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      @media (max-width: 768px) {
+        flex-direction: column; // Altera a direção do flex para coluna
+        text-align: center; // Centraliza o texto
+      }
 
       .sobre-image {
         border-radius: 50%; // Arredonda a imagem
@@ -368,11 +502,20 @@ a {
         &:hover {
           transform: scale(1.1); // Aumenta a imagem em 10% ao passar o mouse
         }
+
+        @media (max-width: 768px) {
+          order: 2; // Coloca a foto abaixo do texto
+          margin-top: 1rem; // Adiciona margem superior
+        }
       }
 
       .sobre-text {
-        max-width: 700px; // Define a largura máxima do texto
+        max-width: 600px; // Define a largura máxima do texto
         line-height: 2; /* Aumenta o espaçamento entre as linhas */
+
+        @media (max-width: 768px) {
+          order: 1; // Coloca o texto acima da foto
+        }
 
         .sobre-title {
           color: $cinza-claro; // Define a cor do título como cinza-claro
@@ -382,6 +525,7 @@ a {
         .sobre-description {
           color: $cinza-claro; // Define a cor do texto como cinza-claro
           font-family: 'Fira Code', monospace; // Define a fonte secundária para o texto
+          text-align: justify; // Centraliza o texto
         }
       }
     }
@@ -484,12 +628,41 @@ button {
 
 // Carroussel de cada projeto
 .project-carousel {
-  margin: 3rem 0;
-  margin-left: 30px; /* Adiciona uma margem de 30px à esquerda */
-  margin-right: 30px; /* Adiciona uma margem de 30px à direita */
-  margin-bottom: 2rem; // Adiciona margem inferior
+  margin: 2rem 0;
 
   .carousel-image {
     border-radius: 10px;
+    max-width: 100%; // Garante que as imagens não ultrapassem a largura da tela
+    height: auto; // Mantém a proporção das imagens
   }
 }
+  .carousel-image {
+    border-radius: 10px;
+  }
+
+// Corousel Ajustes para telas menores (mobile)
+@media (max-width: 768px) {
+  .project-carousel {
+    margin: 1rem 0; // Reduz a margem para telas menores
+  }
+}
+
+// Video Pagina Projetos individual
+.project-video {
+  margin: 2rem 0;
+  text-align: center;
+
+  video {
+    max-width: 100%; // Limita a largura do vídeo
+    height: auto; // Mantém a proporção
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    video {
+      width: 100%; // Ocupa toda a largura em telas menores
+    }
+  }
+}
+
+

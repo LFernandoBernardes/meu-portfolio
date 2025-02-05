@@ -5,14 +5,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules'; // Importe os módulos
 import 'swiper/swiper-bundle.css';
 import Image from 'next/image';
-import Link from 'next/link'; 
+
 
 export default function ProjectsCarousel() {
   const projects = [
     { id: 1, 
-        name: 'JavaScript_StarWars', 
-        description: 'Criação de um Site com tema do starwars com a finalidade de estudos de Javascript para Qas do Fernando Papito', 
-        image: '/images/javascript_starwars.png' 
+        name: 'Bootcamp - Tripleten', 
+        description: 'Cinco projetos de qualidade de Software. Com foco em testes manuais, testes de API criação de Plano de Testes', 
+        image: '/images/bootcamp.png' 
     },
     { id: 2, 
         name: 'Swaglab', 
@@ -20,22 +20,22 @@ export default function ProjectsCarousel() {
         image: '/images/swaglab.png' ,
         url: 'http://localhost:3001/portfolio/2'
      },
-    { id: 3, name: 'Duconder', description: 'Voluntário testes e2e, manual', image: '/images/duconder.jpg' },
-    { id: 4, name: 'OrangemHRM', description: 'Testes em Cypress', image: '/images/orangemhrm.jpg' },
-    { id: 5, name: 'JavaScript_StarWars', description: 'Projeto JavaScript', image: '/images/javascript_starwars.jpg' },
-    { id: 6, name: 'L5Network', description: 'Testes de navegação e interação no site e2e', image: '/images/l5network.jpg' },
+    { id: 3, name: 'Duconder', description: 'Voluntário testes e2e, manual', image: '/images/duconder.png' },
+    { id: 4, name: 'OrangemHRM', description: 'Testes em Cypress', image: '/images/orangemhrm.png' },
+    { id: 5, name: 'JavaScript_StarWars', description: 'Projeto JavaScript', image: '/images/javascript_starwars.png' },
+    // { id: 6, name: 'L5Network', description: 'Testes de navegação e interação no site e2e', image: '/images/l5network.png' },
   ];
 
   return (
     <Swiper
-      spaceBetween={30}
-      slidesPerView= {2} // Exibe 3 projetos por vez
-      navigation
-      pagination={{ clickable: true }}
-      modules={[Navigation, Pagination]} // Adicione os módulos
+    spaceBetween={1}
+    slidesPerView={2}
+    loop={true} // Ativa o loop (repetição contínua)
+    // navigation
+    pagination={{ clickable: true }}
+    modules={[Navigation, Pagination]} // Adicione os módulos
       className="projects-carousel"
-      
-      
+            
       
     >
       {projects.map((project) => (
@@ -43,8 +43,8 @@ export default function ProjectsCarousel() {
           <Image
             src={project.image}
             alt={project.name}
-            width={400}
-            height={300}
+            width={500}
+            height={350}
             className="project-image"
           />
           <h3 className="project-name">{project.name}</h3>

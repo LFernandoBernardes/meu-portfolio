@@ -2,16 +2,22 @@
 'use client';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import Image from 'next/image';
 
-export default function ProjectCarousel({ images, video }) {
+
+
+
+export default function ProjectCarousel({ images }) {
   return (
     <Swiper
-      spaceBetween={50}
+      spaceBetween={10}
       slidesPerView={1}
+      loop={true} // Ativa o loop (repetição contínua)
       navigation
       pagination={{ clickable: true }}
+      modules={[Navigation, Pagination]} // Adicione os módulos
       className="project-carousel"
     >
       {images.map((image, index) => (
@@ -19,20 +25,12 @@ export default function ProjectCarousel({ images, video }) {
           <Image
             src={image}
             alt={`Imagem ${index + 1} do projeto`}
-            width={800}
-            height={450}
+            width={500}
+            height={350}
             className="carousel-image"
           />
         </SwiperSlide>
       ))}
-      {video && (
-        <SwiperSlide>
-          <video controls width="800" height="450">
-            <source src={video} type="video/mp4" />
-            Seu navegador não suporta o elemento de vídeo.
-          </video>
-        </SwiperSlide>
-      )}
     </Swiper>
   );
 }

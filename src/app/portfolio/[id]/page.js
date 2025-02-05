@@ -10,14 +10,14 @@ const projects = [
     id: 1,
     name: 'Bootcamp',
     description: 'Analista QA foco em testes manuais',
-    image: '/images/bootcamp.jpg',
+    image: '/images/bootcamp.png',
     details: 'Detalhes sobre o Bootcamp...',
     technologies: ['React', 'Next.js', 'Node.js'], // Tecnologias usadas
     repository: 'https://github.com/seu-usuario/novo-projeto', // Link do repositório
     images: [ // Array de imagens para o carrossel
-      '/images/novo-projeto-1.jpg',
-      '/images/novo-projeto-2.jpg',
-      '/images/novo-projeto-3.jpg',
+      '/images/novo-projeto-1.png',
+      '/images/novo-projeto-2.png',
+      '/images/novo-projeto-3.png',
     ],
     video: '/videos/novo-projeto.mp4', // Vídeo do projeto (opcional)
   },
@@ -30,9 +30,11 @@ const projects = [
     technologies: ['React', 'Next.js', 'Node.js'], // Tecnologias usadas
     repository: 'https://github.com/seu-usuario/novo-projeto', // Link do repositório
     images: [ // Array de imagens para o carrossel
-      '/images/novo-projeto-1.jpg',
-      '/images/novo-projeto-2.jpg',
-      '/images/novo-projeto-3.jpg',
+      '/images/swaglab.png',
+      '/images/swaglab.png',
+      '/images/swaglab.png',
+      '/images/swaglab.png',
+      
     ],
     video: '/videos/novo-projeto.mp4', // Vídeo do projeto (opcional)
   },
@@ -40,14 +42,14 @@ const projects = [
     id: 3,
     name: 'Duconder',
     description: 'Voluntário testes e2e, manual',
-    image: '/images/duconder.jpg',
+    image: '/images/duconder.png',
     details: 'Detalhes sobre o Duconder...',
     technologies: ['React', 'Next.js', 'Node.js'], // Tecnologias usadas
     repository: 'https://github.com/seu-usuario/novo-projeto', // Link do repositório
     images: [ // Array de imagens para o carrossel
-      '/images/novo-projeto-1.jpg',
-      '/images/novo-projeto-2.jpg',
-      '/images/novo-projeto-3.jpg',
+      '/images/novo-projeto-1.png',
+      '/images/novo-projeto-2.png',
+      '/images/novo-projeto-3.png',
     ],
     video: '/videos/novo-projeto.mp4', // Vídeo do projeto (opcional)
   },
@@ -55,14 +57,14 @@ const projects = [
     id: 4,
     name: 'OrangemHRM',
     description: 'Testes em Cypress',
-    image: '/images/orangemhrm.jpg',
+    image: '/images/orangemhrm.png',
     details: 'Detalhes sobre o OrangemHRM...',
     technologies: ['React', 'Next.js', 'Node.js'], // Tecnologias usadas
     repository: 'https://github.com/seu-usuario/novo-projeto', // Link do repositório
     images: [ // Array de imagens para o carrossel
-      '/images/novo-projeto-1.jpg',
-      '/images/novo-projeto-2.jpg',
-      '/images/novo-projeto-3.jpg',
+      '/images/novo-projeto-1.png',
+      '/images/novo-projeto-2.png',
+      '/images/novo-projeto-3.png',
     ],
     video: '/videos/novo-projeto.mp4', // Vídeo do projeto (opcional)
   },
@@ -75,9 +77,9 @@ const projects = [
     technologies: ['React', 'Next.js', 'Node.js'], // Tecnologias usadas
     repository: 'https://github.com/seu-usuario/novo-projeto', // Link do repositório
     images: [ // Array de imagens para o carrossel
-      '/images/novo-projeto-1.jpg',
-      '/images/novo-projeto-2.jpg',
-      '/images/novo-projeto-3.jpg',
+      '/images/novo-projeto-1.png',
+      '/images/novo-projeto-2.png',
+      '/images/novo-projeto-3.png',
     ],
     video: '/videos/novo-projeto.mp4', // Vídeo do projeto (opcional)
 
@@ -86,14 +88,14 @@ const projects = [
     id: 6,
     name: 'L5Network',
     description: 'Testes de navegação e interação no site e2e',
-    image: '/images/l5network.jpg',
+    image: '/images/l5network.png',
     details: 'Detalhes sobre o L5Network...',
     technologies: ['React', 'Next.js', 'Node.js'], // Tecnologias usadas
     repository: 'https://github.com/seu-usuario/novo-projeto', // Link do repositório
     images: [ // Array de imagens para o carrossel
-      '/images/novo-projeto-1.jpg',
-      '/images/novo-projeto-2.jpg',
-      '/images/novo-projeto-3.jpg',
+      '/images/novo-projeto-1.png',
+      '/images/novo-projeto-2.png',
+      '/images/novo-projeto-3.png',
     ],
     video: '/videos/novo-projeto.mp4', // Vídeo do projeto (opcional)
   },
@@ -102,14 +104,14 @@ const projects = [
     id: 7, // Novo ID (único)
     name: 'Novo Projeto',
     description: 'Descrição do novo projeto',
-    image: '/images/novo-projeto.jpg', // Caminho da imagem
+    image: '/images/novo-projeto.png', // Caminho da imagem
     details: 'Detalhes sobre o novo projeto...',
     technologies: ['React', 'Next.js', 'Node.js'], // Tecnologias usadas
     repository: 'https://github.com/seu-usuario/novo-projeto', // Link do repositório
     images: [ // Array de imagens para o carrossel
-      '/images/novo-projeto-1.jpg',
-      '/images/novo-projeto-2.jpg',
-      '/images/novo-projeto-3.jpg',
+      '/images/novo-projeto-1.png',
+      '/images/novo-projeto-2.png',
+      '/images/novo-projeto-3.png',
     ],
     video: '/videos/novo-projeto.mp4', // Vídeo do projeto (opcional)
   },
