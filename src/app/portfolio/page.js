@@ -83,9 +83,9 @@ const projects = [
   },
   {
     id: 6,
-    name: 'L5Network',
+    name: 'Starbugs',
     description: 'Testes de navegação e interação no site e2e',
-    image: '/images/l5network.png',
+    image: '/images/Starbugs.png',
     details: 'Detalhes sobre o novo projeto...',
     technologies: ['React', 'Next.js', 'Node.js'], // Tecnologias usadas
     repository: 'https://github.com/seu-usuario/novo-projeto', // Link do repositório
@@ -122,7 +122,7 @@ export default function Portfolio() {
     <div className="portfolio-page">
       <Header /> {/* Adicione o Header */}
       <main>
-        <h1 className="portfolio-title">Meu Portfólio</h1>
+        <h1 className="portfolio-title">Portfólio</h1>
         <div className="portfolio-grid">
           {projects.map((project) => (
             <Link key={project.id} href={`/portfolio/${project.id}`} className="project-card">
@@ -130,7 +130,7 @@ export default function Portfolio() {
                 src={project.image}
                 alt={project.name}
                 width={300}
-                height={200}
+                height={300}
                 className="project-image"
               />
               <h2 className="project-name">{project.name}</h2>

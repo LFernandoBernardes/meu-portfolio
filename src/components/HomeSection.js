@@ -14,12 +14,12 @@ export default function HomeSection() {
           className="profile-image"
         /> */}
         <div className="home-text">
-          <h1 className="home-title">Olá, eu sou Luiz Fernando</h1>
-          <p className="home-description">
-            Sou um Analista de QA Junior com experiência em testes manuais e automação. Trabalho com ferramentas como Cypress, Selenium, e Postman. Além disso, tenho conhecimentos em JavaScript e Python. Nos meus projetos, busco sempre garantir a qualidade e a usabilidade dos produtos.
-          </p>
+          <h1 className="home-title">Luiz Fernando Bernardes</h1>
+          <h2 className="home-description">
+          Garantia de qualidade não é só testar, é antecipar problemas e melhorar processos. Explore meu portfólio e veja como posso contribuir para o sucesso da sua empresa e fortalecer seu software!
+          </h2>
           <Link href="/sobre" className="about-button">
-            Saiba mais sobre mim
+            Sobre mim
           </Link>
         </div>
       </div>

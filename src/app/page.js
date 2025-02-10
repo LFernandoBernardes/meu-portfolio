@@ -6,6 +6,7 @@ import HomeSection from '../components/HomeSection';
 import ProjectsSection from '../components/ProjectsSection';
 import ContactSection from '../components/ContactSection';
 
+
 export default function Home() {
   return (
     <div className="home-page">
@@ -18,6 +19,7 @@ export default function Home() {
         <HomeSection />
         <ProjectsSection />
         {/* <ContactSection /> */}
+
       </main>
       <Footer />
     </div>

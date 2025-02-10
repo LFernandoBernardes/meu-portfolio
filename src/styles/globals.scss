@@ -48,7 +48,7 @@ main {
 // Estilos para os títulos (h1, h2, h3)
 h1, h2, h3 {
   font-family: $fonte-principal; // Define a fonte principal para títulos
-  color: $cinza-claro; // Define a cor dos títulos como azul escuro
+  color: $amarelo-queimado; // Define a cor dos títulos como azul escuro
 }
 
 // Estilos para links
@@ -193,7 +193,7 @@ Copy
       margin-left: 10px; /* Adiciona uma margem de 20px à esquerda */
 
       .home-title {
-        color: $cinza-claro; // Define a cor do título como azul escuro
+        color: $amarelo-queimado; // Define a cor do título como azul escuro
         font-family: $fonte-principal; // Define a fonte principal para o título
       }
 
@@ -233,13 +233,13 @@ Copy
   }
 
   
-  .project-description {
-    color: $cinza-claro; // Define a cor do texto como cinza escuro
-    font-family: $fonte-secundaria; // Define a fonte secundária para o texto
-    text-align: justify; // Centraliza o texto
-    margin-bottom: 5rem; // Adiciona margem inferior
-    // margin-right: 2%; /* Adiciona uma margem de 30px à direita */
-  }
+  // .project-description {
+  //   color: $cinza-claro; // Define a cor do texto como cinza escuro
+  //   font-family: $fonte-secundaria; // Define a fonte secundária para o texto
+  //   text-align: center; // Centraliza o texto
+  //   margin-bottom: 5rem; // Adiciona margem inferior
+  //   // margin-right: 2%; /* Adiciona uma margem de 30px à direita */
+  // }
 }
 
 
@@ -280,7 +280,7 @@ Copy
   background-color: $cinza-claro; // Define o fundo da seção como branco
 
   .skills-title {
-    color: $cinza-claro; // Define a cor do título como azul escuro
+    color: $azul-marinho; // Define a cor do título como azul escuro
     font-family: $fonte-principal; // Define a fonte principal para o título
     text-align: center; // Centraliza o texto
     margin-bottom: 3rem; // Adiciona margem inferior
@@ -323,7 +323,7 @@ Copy
   text-align: center; // Centraliza o texto
 
   .portfolio-title {
-    color: $cinza-claro; // Define a cor do título como azul escuro
+    color: $amarelo-queimado; // Define a cor do título como azul escuro
     font-family: $fonte-principal; // Define a fonte principal para o título
     margin-bottom: 3rem; // Remove margem inferior
   }
@@ -399,30 +399,126 @@ Copy
     margin-bottom: 2rem; // Adiciona margem inferior
   }
 
-  .project-details {
-    text-align: left; // Alinha o texto à esquerda
-    max-width: 800px; // Define a largura máxima do conteúdo
-    margin: 0 auto; // Centraliza o conteúdo na página
-
+  // Descriçao na pagina do projeto
+  .project-long-description {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: justify;
+    line-height: 2;
+    font-size: 1.1rem;
+  
+    h1{
+      color: $cinza-claro;
+      font-family: $fonte-principal;
+      margin-bottom: 1rem;
+    }
+  
     h2 {
-      color: $cinza-claro; // Define a cor do título como cinza-claro
-      font-family: $fonte-principal; // Define a fonte principal para o título
-      margin-bottom: 1rem; // Adiciona margem inferior
+      color: $cinza-claro;
+      font-family: $fonte-principal;
+      margin-bottom: 1rem;
+    }
+  
+    h3 {
+      color: $amarelo-queimado;
+      font-family: $fonte-principal;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    p {
+      color: $cinza-claro;
+      font-family: $fonte-secundaria;
+      margin-bottom: 1rem;
+
+    }
+  
+    ul {
+      list-style-type: disc;
+      margin-left: 2rem;
+      margin-bottom: 1rem;
+  
+      li {
+        color: $cinza-claro;
+        font-family: $fonte-secundaria;
+      }
+    }
+  
+    strong {
+      color: $cinza-claro;
+      font-weight: bold;
+    }
+  }
+
+  .read-more-button {
+    background-color: $amarelo-queimado;
+    color: $branco;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  
+    &:hover {
+      background-color: darken($amarelo-queimado, 10%);
+    }
+  }
+
+  .btn-default{
+    background-color: $amarelo-queimado;
+    color: $cinza-claro;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  
+    &:hover {
+      background-color: darken($amarelo-queimado, 10%);
     }
 
-    p {
-      color: $cinza-claro; // Define a cor do texto como cinza-claro
-      font-family: $fonte-secundaria; // Define a fonte secundária para o texto
+    a{
+      color: $cinza-claro;
     }
   }
 
   .project-carousel {
     margin: 2rem 0;
 
+    h1{
+      color: $cinza-claro;
+      font-family: $fonte-principal;
+      margin-bottom: 1rem;
+    }
+
     .carousel-image {
       border-radius: 10px;
       max-width: 100%; // Garante que as imagens do carrossel não ultrapassem a largura da tela
       height: auto; // Mantém a proporção das imagens
+      width: 600px; // Tamanho das logos
+      height: 350px;
+
+    }
+  }
+}
+
+.technologies-list {
+  display: flex;
+  gap: 1rem; // Espaçamento entre as logos
+  list-style: none; // Remove os marcadores de lista
+  padding: 0; // Remove o padding padrão
+  margin: 1rem 0; // Adiciona margem superior e inferior
+
+
+  .technology-logo {
+    width: 50px; // Tamanho das logos
+    height: 50px;
+    transition: transform 0.3s ease; // Efeito de hover
+
+    &:hover {
+      transform: scale(1.1); // Aumenta a logo ao passar o mouse
     }
   }
 }
@@ -431,10 +527,19 @@ Copy
 @media (max-width: 768px) {
   .project-page {
     padding: 0.5rem; // Reduz o padding para telas menores
+ 
   }
 
   .project-carousel {
     margin: 1rem 0; // Reduz a margem para telas menores
+    width: 100%; // Ocupa toda a largura em telas menores
+    height: 100%;
+  }
+
+  .carousel-image{
+    margin: 1rem 0; // Reduz a margem para telas menores
+    width: 100%; // Ocupa toda a largura em telas menores
+    height: 100%;
   }
 }
 
@@ -480,7 +585,7 @@ Copy
         }
 
         .sobre-title {
-          color: $cinza-claro; // Define a cor do título como cinza-claro
+          color: $amarelo-queimado; // Define a cor do título como cinza-claro
           font-family: 'Fira Code', monospace; // Define a fonte principal para o título
         }
 
@@ -577,29 +682,43 @@ button {
   animation: fadeIn 0.5s ease-in-out;
 }
 
-// Efeito de Hover nos Links do Cabeçalho
-.nav-link {
-  color: $branco;
-  text-decoration: none;
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: $amarelo-queimado;
-  }
+// Botão Ver mais projetos pagina do projeto
+.other-projects-button {
+  text-align: center;
+  margin: 20px 0;
 }
+
+.see-other-projects {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:$amarelo-queimado;
+  color: $cinza-queimado;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.see-other-projects:hover {
+  background-color: $cinza-claro;
+}
+
 
 // Carroussel de cada projeto
 .project-carousel {
-  margin: 2rem 0;
+  margin: 3rem 3;
 
   .carousel-image {
     border-radius: 10px;
     max-width: 100%; // Garante que as imagens não ultrapassem a largura da tela
     height: auto; // Mantém a proporção das imagens
+ 
   }
 }
   .carousel-image {
     border-radius: 10px;
+    object-fit: cover;
+    text-align: center; // Centraliza o conteúdo do slide
   }
 
 // Corousel Ajustes para telas menores (mobile)
@@ -649,8 +768,8 @@ button {
 
 .swiper-slide img {
   // display: block;
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
   object-fit: cover;
   text-align: center; // Centraliza o conteúdo do slide
 }
@@ -679,3 +798,53 @@ button {
 //   object-fit: cover;
 // }
 
+// .project-long-Description {
+//   max-width: 800px;
+//   margin: 2rem auto;
+//   text-align: left; // Alinha o texto à esquerda
+//   line-height: 1.6; // Melhora a legibilidade
+//   font-size: 1.1rem; // Aumenta o tamanho da fonte
+
+//   h2 {
+//     color: $azul-marinho;
+//     font-family: $fonte-principal;
+//     margin-bottom: 1rem;
+//   }
+
+//   p {
+//     color: $cinza-queimado;
+//     font-family: $fonte-secundaria;
+//   }
+// }
+
+// Carousel paginas dos projetos
+.mySwiper_pagina {
+  width: 50%;
+  height: 50%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: $azul-marinho;
+  text-align: justify; // Centraliza o conteúdo do slide
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; // Centraliza o conteúdo do slide
+}
+
+.swiper-slide img {
+  // display: block;
+  width: 30%;
+  height: 30%;
+  object-fit: cover;
+  text-align: center; // Centraliza o conteúdo do slide
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
