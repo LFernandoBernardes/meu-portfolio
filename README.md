@@ -1,37 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# README
 
-## Getting Started
+Este projeto é um site de portfólio pessoal desenvolvido para exibir meus projetos, habilidades e experiências como QA. Utilizando tecnologias modernas como Next.js, React e Swiper, criei uma plataforma interativa e responsiva que destaca meus trabalhos e conhecimentos.
 
-First, run the development server:
+![alt text](image.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O site foi construído do zero, desde a estruturação do front-end até a implementação de testes automatizados com Cypress e Jest, garantindo qualidade e performance. Além de ser uma vitrine profissional, este projeto representou um grande desafio e aprendizado, permitindo-me explorar novas ferramentas e consolidar meus conhecimentos em desenvolvimento e qualidade de software.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Destaques:
+- Tecnologias Modernas: Next.js, React, Swiper, Cypress, Jest.
+- Testes Automatizados: Garantia de qualidade com testes e2e e unitários.
+- Responsivo e Acessível: Design adaptável para diferentes dispositivos.
+- Deploy Automático: Hospedagem na Vercel com integração contínua via GitHub Actions.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Este projeto não apenas demonstra minhas habilidades técnicas, mas também minha capacidade de aprender e aplicar novas tecnologias, algo essencial para minha trajetória como QA.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tecnologias Utilizadas
 
-## Learn More
+1. Linguagens de Programação:
+    - JavaScript
+    - HTML/CSS
+2. Frameworks:
+    - Next.js
+    - React
+3. Bibliotecas:
+    - Swiper (carousel)
+    - React Modal (modais)
+    - CSS Modules (estilização)
+4. Ferramentas de Testes:
+    - Cypress (testes e2e)
+    - Jest (testes unitários)
+    - React Testing Library (testes de integração)
+5. Ferramentas de Desenvolvimento:
+    - Git/GitHub
+    - VSCode
+    - ESLint/Prettier
+6. Hospedagem e CI/CD:
+    - Vercel
+    - GitHub Actions
 
-To learn more about Next.js, take a look at the following resources:
+## Como Rodar o Projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Pré-requisitos:
+    - Node.js instalado (versão 16 ou superior).
+    - Git instalado.
+2. Clonar o Repositório:
+    `https://github.com/LFernandoBernardes/meu-portfolio`
+3. Instalar Dependências:
+    `npm install`
+4. Rodar o Projeto Localmente:
+    `npm run dev`
+    - O projeto estará disponível em http://localhost:3000.
+5. Rodar Testes:
+    - Testes Unitários:
+       `npm test`
+    - Testes End-to-End (Cypress):
+        `npx cypress open`
+6. Build e Deploy:
+    - Para build:
+        `npm run build`
+    - O deploy é automático via Vercel ao fazer push na branch main.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Estrutura do Projeto
+- `/components`: Componentes reutilizáveis do React.
+- `/pages`: Rotas do Next.js.
+- `/public`: Arquivos estáticos (imagens, fonts).
+- `/styles`: Estilos CSS Modules.
+- `/cypress`: Testes end-to-end.
+- `/__tests__`: Testes unitários e de integração.
+- 
+### Contribuição
+- Sinta-se à vontade para abrir issues ou pull requests com melhorias e correções.
+  
+### Autor
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# meu-portfolio
+- Luiz Fernando Bernardes Borges - Analista de Qualidade de Software

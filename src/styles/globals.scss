@@ -65,7 +65,7 @@ a {
 // Estilos para o cabeçalho (Header)
 .header {
   background-color: $cinza-queimado; // Define o fundo do cabeçalho como azul escuro
-  padding: 1rem; // Adiciona padding interno
+  padding: 2rem; // Adiciona padding interno
   position: sticky; // Fixa o cabeçalho no topo da página
   top: 0; // Posiciona o cabeçalho no topo
   z-index: 1000; // Garante que o cabeçalho fique acima de outros elementos
@@ -74,7 +74,8 @@ a {
   .nav {
     display: flex; // Usa flexbox para alinhar os itens
     justify-content: center; // Centraliza os itens horizontalmente
-    gap: 2rem; // Adiciona espaçamento entre os itens
+    gap: 3rem; // Adiciona espaçamento entre os itens
+    font-size:large;
 
     .nav-link {
       color: $branco; // Define a cor dos links do menu como branco
@@ -111,14 +112,15 @@ a {
   margin-top: 3rem; // Adiciona margem superior
 
   .footer-text {
-    margin: 0; // Remove margens padrão
+    margin: 3; // Remove margens padrão
   }
 
   .footer-links {
     display: flex; // Usa flexbox para alinhar os itens
     justify-content: center; // Centraliza os itens horizontalmente
-    gap: 1rem; // Adiciona espaçamento entre os itens
-    margin-top: 1rem; // Adiciona margem superior
+    gap: 3rem; // Adiciona espaçamento entre os itens
+    margin-top: 2rem; // Adiciona margem superior
+    font-size:large;
 
     .footer-link {
       color: $branco; // Define a cor dos links como branco
@@ -452,22 +454,23 @@ Copy
 
   .read-more-button {
     background-color: $amarelo-queimado;
-    color: $branco;
+    color: $azul-marinho;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    font-size: medium;
   
     &:hover {
-      background-color: darken($amarelo-queimado, 10%);
+      background-color: darken($amarelo-queimado, 20%);
     }
   }
 
   .btn-default{
     background-color: $amarelo-queimado;
-    color: $cinza-claro;
+    color: $azul-marinho;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -480,7 +483,8 @@ Copy
     }
 
     a{
-      color: $cinza-claro;
+      color: $azul-marinho;
+      font-size: larger;
     }
   }
 
@@ -556,6 +560,9 @@ Copy
       display: flex;
       align-items: center;
       gap: 2rem;
+      flex-direction: column; /* Coloca os elementos um embaixo do outro */
+
+      text-align: center;
 
       @media (max-width: 768px) {
         flex-direction: column; // Altera a direção do flex para coluna
@@ -565,6 +572,7 @@ Copy
       .sobre-image {
         border-radius: 50%; // Arredonda a imagem
         transition: transform 0.3s ease; // Adiciona transição suave no efeito de zoom
+   
 
         &:hover {
           transform: scale(1.1); // Aumenta a imagem em 10% ao passar o mouse
@@ -579,6 +587,7 @@ Copy
       .sobre-text {
         max-width: 600px; // Define a largura máxima do texto
         line-height: 2; /* Aumenta o espaçamento entre as linhas */
+        text-align: justify;
 
         @media (max-width: 768px) {
           order: 1; // Coloca o texto acima da foto
@@ -593,6 +602,7 @@ Copy
           color: $cinza-claro; // Define a cor do texto como cinza-claro
           font-family: 'Fira Code', monospace; // Define a fonte secundária para o texto
           text-align: justify; // Centraliza o texto
+ 
         }
       }
     }
@@ -611,6 +621,7 @@ Copy
       }
 
       .skills-grid {
+        background-color: $cinza-claro;
         display: grid; // Usa grid para organizar os itens
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); // Define o layout do grid
         gap: 2rem; // Adiciona espaçamento entre os itens
@@ -619,7 +630,7 @@ Copy
           text-align: center; // Centraliza o texto
 
           h3 {
-            color: $cinza-claro; // Define a cor do título como cinza-claro
+            color: $azul-marinho; // Define a cor do título como cinza-claro
             font-family: 'Fira Code', monospace; // Define a fonte principal para o título
           }
 
@@ -635,6 +646,9 @@ Copy
                 transform: scale(1.2); // Aumenta o ícone em 20% ao passar o mouse
               }
             }
+          }
+          @media (max-width: 768px) {
+            margin-top: 1rem; // Adiciona margem superior
           }
         }
       }
@@ -656,7 +670,7 @@ img {
 // Efeito de Fundo nos Botões
 button {
   background-color: $amarelo-queimado;
-  color: $branco;
+  color: $azul-marinho;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -667,6 +681,8 @@ button {
     background-color: darken($amarelo-queimado, 10%);
   }
 }
+
+
 
 // Animação de Fade-In
 @keyframes fadeIn {

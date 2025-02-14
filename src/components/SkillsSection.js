@@ -18,10 +18,12 @@ export default function SkillsSection() {
         <div className="skill-category">
           <h3>Ferramentas de Testes</h3>
           <div className="skill-icons">
+          <Image src="/images/Cucumber.webp" alt="Cucumber" width={50} height={50} />
             <Image src="/images/cypress.png" alt="Cypress" width={50} height={50} />
             <Image src="/images/playwright.png" alt="Playwright" width={50} height={50} />
             <Image src="/images/jest.png" alt="Jest" width={50} height={50} />
             <Image src="/images/postman.png" alt="Postman" width={50} height={50} />
+            <Image src="/images/Cucumber.webp" alt="Cucumber" width={50} height={50} />
           </div>
         </div>
         {/* Outras Ferramentas */}

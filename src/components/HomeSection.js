@@ -14,7 +14,7 @@ export default function HomeSection() {
           className="profile-image"
         /> */}
         <div className="home-text">
-          <h1 className="home-title">Luiz Fernando Bernardes</h1>
+          <h1 className="home-title">Luiz Fernando Bernardes Borges</h1>
           <h2 className="home-description">
           Garantia de qualidade não é só testar, é antecipar problemas e melhorar processos. Explore meu portfólio e veja como posso contribuir para o sucesso da sua empresa e fortalecer seu software!
           </h2>

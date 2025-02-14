@@ -26,7 +26,7 @@ export default function ProjectsCarousel() {
     },
     {
       id: 3,
-      name: 'Duconder',
+      name: 'Docunder',
       description: 'Voluntário testes e2e, manual',
       image: '/images/duconder.png',
       url: 'http://localhost:3000/portfolio/3' // URL da página do projeto
@@ -42,7 +42,7 @@ export default function ProjectsCarousel() {
       id: 5,
       name: 'JavaScript_StarWars',
       description: 'Projeto JavaScript',
-      image: '/images/javascript_starwars.png',
+      image: '/images/starwars.png',
       url: 'http://localhost:3000/portfolio/5' // URL da página do projeto
     },
     {

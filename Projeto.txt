@@ -1,42 +1,48 @@
-src/
-├── app/
-│   ├── sobre/
-│   │   └── page.js              // Página "Sobre"
-│   ├── projetos/
-│   │   ├── [id]/
-│   │   │   └── page.js          // Página dinâmica de projetos
-│   │   └── page.js              // Página de listagem de projetos (galeria)
-│   ├── global.css
-│   ├── layout.js                // Layout global do site
-│   ├── page.js                  // Página inicial (Home)
-│   ├── index.js
-│   ├── projetos.js
-│   ├── sobre.js
-├── components/
-│   ├── Header.js                // Componente do cabeçalho
-│   ├── Footer.js                // Componente do rodapé
-│   ├── HomeSection.js           // Seção da página inicial
-│   ├── ProjectsSection.js       // Seção de projetos da página inicial
-│   ├── ContactSection.js        // Seção de contato da página inicial
-│   ├── ProjectsCarousel.client.js // Carrossel de projetos (Client Component)
-│   └── SkillsSection.js         // Seção de habilidades da página "Sobre"
-├── styles/
-│   └── globals.scss             // Estilos globais do site
-├── public/
-│   ├── images/
-│   │   ├── foto-sobre.jpg       // Foto da página "Sobre"
-│   │   ├── bootcamp.jpg         // Imagem do projeto Bootcamp
-│   │   ├── swaglab.jpg          // Imagem do projeto Swaglab
-│   │   ├── javascript.png       // Logo do JavaScript
-│   │   ├── typescript.png       // Logo do TypeScript
-│   │   ├── cypress.png          // Logo do Cypress
-│   │   ├── playwright.png       // Logo do Playwright
-│   │   ├── jest.png             // Logo do Jest
-│   │   ├── postman.png          // Logo do Postman
-│   │   ├── github.png           // Logo do GitHub
-│   │   ├── jira.png             // Logo do Jira
-│   │   ├── docker.png           // Logo do Docker
-│   │   └── vscode.png           // Logo do VSCode
-└── tests/
-    ├── example.test.js          // Teste de exemplo
-    └── Header.test.js           // Teste do componente Header
+meu-portfolio/
+├── public/                  # Arquivos estáticos (imagens, fonts, etc.)
+│   ├── images/              # Imagens usadas no site
+│   │   ├── bootcamp.png     # Exemplo de imagem de projeto
+│   │   ├── swaglab.png      # Exemplo de imagem de projeto
+│   │   └── ...              # Outras imagens
+│   └── favicon.ico          # Ícone do site
+│
+├── src/                     # Código-fonte do projeto
+│   ├── components/          # Componentes reutilizáveis do React
+│   │   ├── Header.js        # Componente do cabeçalho
+│   │   ├── Footer.js        # Componente do rodapé
+│   │   ├── ProjectsCarousel.client.js # Componente do carousel de projetos
+│   │   └── ...              # Outros componentes
+│   │
+│   ├── pages/               # Rotas do Next.js
+│   │   ├── index.js         # Página inicial
+│   │   ├── portfolio/       # Página de portfólio
+│   │   │   ├── [id].js      # Rota dinâmica para detalhes do projeto
+│   │   │   └── index.js     # Listagem de todos os projetos
+│   │   └── ...              # Outras páginas
+│   │
+│   ├── styles/              # Estilos CSS Modules
+│   │   ├── globals.css      # Estilos globais
+│   │   ├── Header.module.css # Estilos do cabeçalho
+│   │   ├── Footer.module.css # Estilos do rodapé
+│   │   └── ...              # Outros estilos
+│   │
+│   ├── cypress/             # Testes end-to-end com Cypress
+│   │   ├── integration/     # Casos de teste e2e
+│   │   │   └── app.spec.js  # Exemplo de teste e2e
+│   │   └── ...              # Configurações do Cypress
+│   │
+│   ├── __tests__/           # Testes unitários e de integração
+│   │   ├── components/      # Testes para componentes
+│   │   │   └── Header.test.js # Teste do componente Header
+│   │   └── ...              # Outros testes
+│   │
+│   └── utils/               # Utilitários e funções auxiliares
+│       └── ...              # Funções reutilizáveis
+│
+├── .gitignore               # Arquivos ignorados pelo Git
+├── package.json             # Dependências e scripts do projeto
+├── next.config.js           # Configurações do Next.js
+├── cypress.config.js        # Configurações do Cypress
+├── jest.config.js           # Configurações do Jest
+├── README.md                # Documentação do projeto
+└── ...                      # Outros arquivos de configuração
