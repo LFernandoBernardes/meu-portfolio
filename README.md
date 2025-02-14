@@ -2,12 +2,12 @@
 
 Este projeto é um site de portfólio pessoal desenvolvido para exibir meus projetos, habilidades e experiências como QA. Utilizando tecnologias modernas como Next.js, React e Swiper, criei uma plataforma interativa e responsiva que destaca meus trabalhos e conhecimentos.
 
-![alt text](image.png)
+![Foto do Site](./public/images/foto_site.png)
 
 O site foi construído do zero, desde a estruturação do front-end até a implementação de testes automatizados com Cypress e Jest, garantindo qualidade e performance. Além de ser uma vitrine profissional, este projeto representou um grande desafio e aprendizado, permitindo-me explorar novas ferramentas e consolidar meus conhecimentos em desenvolvimento e qualidade de software.
 
 ## Destaques:
-- Tecnologias Modernas: Next.js, React, Swiper, Cypress, Jest.
+- Tecnologias: Next.js, React, Swiper, Cypress.
 - Testes Automatizados: Garantia de qualidade com testes e2e e unitários.
 - Responsivo e Acessível: Design adaptável para diferentes dispositivos.
 - Deploy Automático: Hospedagem na Vercel com integração contínua via GitHub Actions.
@@ -67,7 +67,7 @@ Este projeto não apenas demonstra minhas habilidades técnicas, mas também min
 - `/styles`: Estilos CSS Modules.
 - `/cypress`: Testes end-to-end.
 - `/__tests__`: Testes unitários e de integração.
-- 
+  
 ### Contribuição
 - Sinta-se à vontade para abrir issues ou pull requests com melhorias e correções.
   
