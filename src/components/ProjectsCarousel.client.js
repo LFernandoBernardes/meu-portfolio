@@ -52,6 +52,13 @@ export default function ProjectsCarousel() {
       image: '/images/starbugs.png',
       url: 'http://localhost:3000/portfolio/6' // URL da página do projeto
     },
+    {
+      id: 7, // Novo ID (único)
+      name: 'Meu Site',
+      description: 'Construção deste Site',
+      image: '/images/meu_site.png', // Caminho da imagem
+      url: 'http://localhost:3000/portfolio/7' // URL da página do projeto
+    },
   ];
 
   // <!-- Swiper JS -->

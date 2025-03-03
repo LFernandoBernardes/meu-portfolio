@@ -40,27 +40,30 @@ export default function Sobre() {
 
             <h2 className="sobre-subtitle">Experiência em Projetos</h2>
             <ul className="sobre-list">
-              <li><strong>Hackathon da TripleTen</strong></li>
+            <li><strong>PrivacyTools</strong></li>
               <ul>
-                <li>Documentação de requisitos funcionais e não funcionais</li>
-                <li>Definição do fluxo de navegação do usuário</li>
-                <li>Planejamento e execução de testes funcionais e não funcionais</li>
-              </ul>
-              <li><strong>Aplicativo de busca por pets na enchente do RS</strong></li>
-              <ul>
-                <li>Planejamento e criação de casos de testes (<strong>QASE.io</strong>)</li>
-              </ul>
-              <li><strong>Docunder</strong></li>
-              <ul>
-                <li>Introdução de testes estruturados com <strong>QASE.io</strong></li>
-                <li>Aplicação do modelo <strong>Shift Left</strong> com Docker, GitHub e Jira</li>
+                <li>Atuo como Analista de Qualidade de Software na <strong>PrivacyTools</strong>, garantindo a excelência das soluções de Gestão de Privacidade e Proteção de Dados Pessoais.</li>
+                <li>Meu trabalho envolve a realização de <strong>testes manuais</strong>  em atualizações e melhorias do software, assegurando que as funcionalidades atendam aos mais altos padrões de qualidade e conformidade. </li>  
+                <li>Com isso, ajudamos empresas a construírem negócios mais responsáveis, fortalecendo a segurança e a transparência na gestão de dados. </li>
+                
               </ul>
               <li><strong>Olympus Code</strong></li>
               <ul>
                 <li>Testes exploratórios e identificação de bugs críticos em um aplicativo com prazo reduzido</li>
                 <li>Participação em reuniões com clientes para definição de requisitos</li>
               </ul>
+              <li><strong>Docunder</strong></li>
+              <ul>
+                <li>Introdução de testes estruturados com <strong>QASE.io</strong></li>
+                <li>Aplicação do modelo <strong>Shift Left</strong> com Docker, GitHub e Jira</li>
+              </ul>
             </ul>
+            <li><strong>Hackathon da TripleTen</strong></li>
+              <ul>
+                <li>Documentação de requisitos funcionais e não funcionais</li>
+                <li>Definição do fluxo de navegação do usuário</li>
+                <li>Planejamento e execução de testes funcionais e não funcionais</li>
+              </ul>
 
             <h2 className="sobre-subtitle">Habilidades e Ferramentas</h2>
             <ul className="sobre-list">

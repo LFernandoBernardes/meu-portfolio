@@ -16,7 +16,7 @@ export default function HomeSection() {
         <div className="home-text">
           <h1 className="home-title">Luiz Fernando Bernardes Borges</h1>
           <h2 className="home-description">
-          Garantia de qualidade não é só testar, é antecipar problemas e melhorar processos. Explore meu portfólio e veja como posso contribuir para o sucesso da sua empresa e fortalecer seu software!
+         Garantia de qualidade é antecipar problemas e melhorar processos. Explore meu portfólio saiba como posso contribuir em projetos de Qualidade de Software!
           </h2>
           <Link href="/sobre" className="about-button">
             Sobre mim
