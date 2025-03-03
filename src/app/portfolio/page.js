@@ -85,7 +85,7 @@ const projects = [
     id: 6,
     name: 'Starbugs',
     description: 'Testes Usando BDD com Cucumber',
-    image: '/images/Starbugs.png',
+    image: '/images/starbugs.png',
     details: 'Detalhes sobre o novo projeto...',
     technologies: ['React', 'Next.js', 'Node.js'], // Tecnologias usadas
     repository: 'https://github.com/seu-usuario/novo-projeto', // Link do repositório
